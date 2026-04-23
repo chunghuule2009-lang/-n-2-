@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News1s-Video</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--==========  HEADER  ==========-->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo1">
+                <div class="logo-frame1">
+                    <span class="logo-text1">News1s</span>
+                </div>
+                <span class="slogan1">Cập nhật trong 1s</span>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm tin tức..." />
+                <button class="search-icon">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-bell" id="bellIcon"></i>
+                <i class="fa-solid fa-user" id="userIcon"></i>
+            </div>
+
+            <!-- SEARCH MOBILE -->
+            <div class="header-right">
+                <div class="search-mobile" id="searchMobileIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="menu-toggle mobile-only" id="mobileMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--==========  NAV MENU ==========-->
+    <nav class="nav-bar">
+        <div class="container nav-inner">
+            <ul class="nav-menu">
+                <li><a href="http://127.0.0.1:5500/index.html">Trang chủ</a></li>
+                <li><a href="http://127.0.0.1:5500/tinmoi.html">Mới</a></li>
+                <li><a href="http://127.0.0.1:5500/video.html">Video</a></li>
+                <li><a href="http://127.0.0.1:5500/ch%E1%BB%A7%20%C4%91%E1%BB%81.html">Chủ đề</a></li>
+                <li><a href="http://127.0.0.1:5500/t%C3%ADch%20c%E1%BB%B1c.html" class="tag-tich-cuc">#tích cực</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="desktopMenuToggle">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEARCH MOBILE PANEL -->
+    <div class="search-mobile-panel" id="searchMobilePanel">
+        <div class="search-mobile-content">
+            <button class="close-search" id="closeSearchMobile">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <input type="text" placeholder="Tìm kiếm tin tức..." />
+            <button class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+    <!--==========  VIDEO NEWS SECTION  ==========-->
+    <section class="video-news-section" id="video-section">
+        <div class="container">
+            <div class="video-content-grid">
+                <!-- Left Column - Videos -->
+                <div class="video-left-column">
+                    <!-- Featured Video -->
+                    <div class="featured-video">
+                        <div class="video-wrapper-featured">
+                            <img src="img/img_video/anh51.jpg" 
+                                 alt="Video nổi bật" 
+                                 class="video-thumbnail-featured">
+                            <div class="video-overlay"></div>
+                            <div class="play-button-featured">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                            <div class="video-duration-badge">15:30</div>
+                            <div class="video-info-overlay">
+                                <div class="video-badge-red">BẢN TIN TỔNG HỢP NGÀY 12/12</div>
+                                <h2 class="video-title-featured">NHỮNG VẤN ĐỀ THỜI SỰ NỔI BẬT</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category Tabs -->
+                    <div class="video-section-header">
+                        <h2 class="video-section-title">Trực tiếp</h2>
+                        <div class="video-category-tabs">
+                            <button class="video-tab-btn active" data-category="all">Trực tiếp</button>
+                            <button class="video-tab-btn" data-category="tech">Công nghệ</button>
+                            <button class="video-tab-btn" data-category="education">Giáo dục</button>
+                            <button class="video-tab-btn" data-category="economy">Kinh tế</button>
+                        </div>
+                    </div>
+
+                    <!-- Video Grid - Trực tiếp -->
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-thumbnail-wrapper">
+                                <img src="img/img_video/anh52.jpg" 
+                                     alt="Video" 
+                                     class="video-thumbnail-card">
+                                <div class="video-overlay"></div>
+                                <div class="play-button-card">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="video-duration-card">8:45</div>
+                            </div>
+                            <h3 class="video-title-card">Dường như vẫn chuyện miễn an toàn cơ thể đang làm gì đang làm vùng biển</h3>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail-wrapper">
+                                <img src="img/img_video/anh53.jpg" 
+                                     alt="Video" 
+                                     class="video-thumbnail-card">
+                                <div class="video-overlay"></div>
+                                <div class="play-button-card">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="video-duration-card">12:20</div>
+                                <div class="badge-new-video">MỚI</div>
+                            </div>
+                            <h3 class="video-title-card">Thăm phỏng Hồ Chí Minh vạn vẽ cho sự có hành hai trường và nhỏ hơn bất đó phân lô lớn trong tỉnh các</h3>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-thumbnail-wrapper">
+                                <img src="img/img_video/anh54.jpg" 
+                                     alt="Video" 
+                                     class="video-thumbnail-card">
+                                <div class="video-overlay"></div>
+                                <div class="play-button-card">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="video-duration-card">6:15</div>
+                            </div>
+                            <h3 class="video-title-card">Tỷ giá thành Phó Vương thành tại chuyến hạn một tỉ giá của thị trường</h3>
+                        </div>
+                    </div>
+
+                    <!-- Section: Công nghệ -->
+                    <div class="video-section-category">
+                        <h2 class="video-section-title">Công nghệ</h2>
+                        <div class="video-grid">
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh55.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">10:20</div>
+                                </div>
+                                <h3 class="video-title-card">Smartphone mới nhất với công nghệ camera AI</h3>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh56.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">8:55</div>
+                                </div>
+                                <h3 class="video-title-card">Xu hướng công nghệ blockchain trong năm 2025</h3>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh57.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">12:40</div>
+                                </div>
+                                <h3 class="video-title-card">5G và tương lai của kết nối internet</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: Kinh tế -->
+                    <div class="video-section-category">
+                        <h2 class="video-section-title">Kinh tế</h2>
+                        <div class="video-grid">
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh58.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">9:15</div>
+                                </div>
+                                <h3 class="video-title-card">Phân tích thị trường bất động sản quý 4</h3>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh59.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">11:30</div>
+                                </div>
+                                <h3 class="video-title-card">Đầu tư chứng khoán cho người mới bắt đầu</h3>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh60.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">14:20</div>
+                                </div>
+                                <h3 class="video-title-card">Dự báo kinh tế Việt Nam năm 2025</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section: Giáo dục -->
+                    <div class="video-section-category">
+                        <h2 class="video-section-title">Giáo dục</h2>
+                        <div class="video-grid">
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh61.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">13:10</div>
+                                </div>
+                                <h3 class="video-title-card">Phương pháp học tập hiệu quả cho học sinh</h3>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh62.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">10:45</div>
+                                </div>
+                                <h3 class="video-title-card">Xu hướng giáo dục STEM tại Việt Nam</h3>
+                            </div>
+
+                            <div class="video-card">
+                                <div class="video-thumbnail-wrapper">
+                                    <img src="img/img_video/anh66.jpg" 
+                                         alt="Video" 
+                                         class="video-thumbnail-card">
+                                    <div class="video-overlay"></div>
+                                    <div class="play-button-card">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="video-duration-card">8:30</div>
+                                </div>
+                                <h3 class="video-title-card">Kỹ năng mềm cần thiết cho sinh viên</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="video-load-more">
+                        <button class="btn-video-load-more">XEM THÊM</button>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar - Trending -->
+                <aside class="video-sidebar">
+                    <div class="trending-box-video">
+                        <h3 class="trending-title-video">
+                            <i class="fa-solid fa-fire"></i>
+                            Đang được chú ý
+                        </h3>
+                        <ul class="trending-list-video">
+                            <li class="trending-item-video">
+                                <span class="trending-number-video">1</span>
+                                <a href="#" class="trending-link-video">Đang hoạt động Chính trị Việt Nam</a>
+                            </li>
+                            <li class="trending-item-video">
+                                <span class="trending-number-video">2</span>
+                                <a href="#" class="trending-link-video">Thượng đỉnh ASEAN-Nga</a>
+                            </li>
+                            <li class="trending-item-video">
+                                <span class="trending-number-video">3</span>
+                                <a href="#" class="trending-link-video">Thượng đỉnh ASEAN-Ấn Độ</a>
+                            </li>
+                            <li class="trending-item-video">
+                                <span class="trending-number-video">4</span>
+                                <a href="#" class="trending-link-video">Ngành Y Tế năm 2025</a>
+                            </li>
+                            <li class="trending-item-video">
+                                <span class="trending-number-video">5</span>
+                                <a href="#" class="trending-link-video">Hưởng ứng tối đa 100tr Vốn vay 0%</a>
+                            </li>
+                            <li class="trending-item-video">
+                                <span class="trending-number-video">6</span>
+                                <a href="#" class="trending-link-video">Thủ tướng chỉ đạo Bạo động ở Đồng Nai</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==========  ĐUÔI TRANG  ========== -->
+    <footer class="footer">
+        <!-- FOOTER TOP -->
+        <div class="footer-top">
+            <div class="container footer-top-inner">
+                <div class="logo2">
+                    <div class="logo-frame2">
+                        <span class="logo-text2">News1s</span>
+                    </div>
+                    <span class="slogan2">Cập nhật trong 1s</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+
+                <!--===== BẢNG1 =====-->
+                <div class="footer-col">
+                    <ul>
+                        <li>
+                            <span class="tieude1">Hotline</span> <br>
+                            <span class="sdt">0987 654 321</span>
+                        </li>
+                        <li>
+                            <span class="tieude1">Liên hệ quảng cáo</span><br>
+                            <span class="sdt">0123 456 789</span>
+                        </li>
+                    </ul>
+                    <div class="mxh">
+                        <div class="fb">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="ytb">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===== BẢNG2 =====-->
+                <div class="footer-col">
+                    <ul>
+                        <li class="tieude2">Tổng biên tập</li>
+                        <li class="thanhvien">Trần Đại Hiệp</li>
+
+                        <li class="tieude2">Phó tổng biên tập</li>
+                        <li class="thanhvien">Nguyễn Quý Đạt</li>
+                        <li class="thanhvien">Lê Hữu Chung</li>
+                        <li class="thanhvien">Nguyễn Tiến Chung</li>
+
+                        <li class="tieude2">Tổng thư ký</li>
+                        <li class="thanhvien">Bùi Đình Hà</li>
+                    </ul>
+                </div>
+
+                <!--===== BẢNG3 =====-->
+                <div class="footer-col">
+                    <span class="tieude3">Đơn vị thiết lập: </span>
+                    <span>Công ty cổ phần công nghệ EPI – Chịu trách nhiệm quản lý nội dung: Vũ Trọng Cường</span><br>
+                    <span class="tieude3">Địa chỉ:</span>
+                    <span> Tầng 16, Tòa nhà ROX Tower, số 54A Nguyễn Chí Thanh, Phường Láng, Thành phố Hà Nội</span>
+                    <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp số 1818/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 05/05/2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE NAV BAR ===== -->
+    <div class="mobile-nav">
+      <a href="http://127.0.0.1:5500/index.html" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Trang chủ</span>
+      </a>
+
+      <a href="http://127.0.0.1:5500/tinmoi.html">
+        <i class="fa-solid fa-clock"></i>
+        <span>Tin mới</span>
+      </a>
+
+      <a href="http://127.0.0.1:5500/video.html">
+        <i class="fa-solid fa-video"></i>
+        <span>Video</span>
+      </a>
+
+      <a href="#" id="mobileNotifyIcon">
+        <i class="fa-solid fa-bell"></i>
+        <span>Thông báo</span>
+      </a>
+
+      <a href="#" id="mobileUserIcon">
+        <i class="fa-solid fa-user"></i>
+        <span>Tôi</span>
+      </a>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Notification Panel -->
+    <div class="notify-panel" id="notifyPanel">
+        <div class="notify-header">
+            <h3>Thông báo</h3>
+            <button class="close-notify" id="closeNotify">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="notify-content">
+            <p>Chưa có thông báo mới</p>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <button class="close-login" id="closeLogin">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        
+        <h2>Đăng nhập</h2>
+
+        <input type="text" placeholder="Tên đăng nhập">
+        <input type="password" placeholder="Mật khẩu">
+
+        <span class="forgot">Quên mật khẩu?</span>
+
+        <div class="divider"></div>
+
+        <p class="signup">
+            Chưa có tài khoản? <span>Đăng ký</span>
+        </p>
+
+        <button class="social google">
+            <i class="fa-brands fa-google"></i> Tiếp tục với Google
+        </button>
+
+        <button class="social facebook">
+            <i class="fa-brands fa-facebook"></i> Tiếp tục với Facebook
+        </button>
+    </div>
+
+    <!-- Hashtag Panel -->
+    <div class="hashtag-panel" id="hashtagPanel">
+        <button class="close-hashtag" id="closeHashtag">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        
+        <div class="hashtag-grid">
+            <div class="hashtag-col">
+                <h4><span>|</span> BÓNG ĐÁ</h4>
+                <p>#NgoạiHạngAnh #LaLiga #SerieA</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> GIẢI TRÍ</h4>
+                <p>#Phim #Nhạc #Sao</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> CÔNG NGHỆ</h4>
+                <p>#AI #Smartphone #Gaming</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> KINH TẾ</h4>
+                <p>#Chứngkhoán #Bất động sản #Khởi nghiệp</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> ĐỜI SỐNG</h4>
+                <p>#Sức khỏe #Du lịch #Ẩm thực</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>

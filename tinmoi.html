@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News1s-Mới</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--==========  HEADER  ==========-->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo1">
+                <div class="logo-frame1">
+                    <span class="logo-text1">News1s</span>
+                </div>
+                <span class="slogan1">Cập nhật trong 1s</span>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm tin tức..." />
+                <button class="search-icon">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-bell" id="bellIcon"></i>
+                <i class="fa-solid fa-user" id="userIcon"></i>
+            </div>
+
+            <!-- SEARCH MOBILE -->
+            <div class="header-right">
+                <div class="search-mobile" id="searchMobileIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="menu-toggle mobile-only" id="mobileMenuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!--==========  NAV MENU ==========-->
+    <nav class="nav-bar">
+        <div class="container nav-inner">
+            <ul class="nav-menu">
+                <li><a href="http://127.0.0.1:5500/index.html">Trang chủ</a></li>
+                <li><a href="http://127.0.0.1:5500/tinmoi.html">Mới</a></li>
+                <li><a href="http://127.0.0.1:5500/video.html">Video</a></li>
+                <li><a href="http://127.0.0.1:5500/ch%E1%BB%A7%20%C4%91%E1%BB%81.html">Chủ đề</a></li>
+                <li><a href="http://127.0.0.1:5500/t%C3%ADch%20c%E1%BB%B1c.html" class="tag-tich-cuc">#tích cực</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="desktopMenuToggle">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEARCH MOBILE PANEL -->
+    <div class="search-mobile-panel" id="searchMobilePanel">
+        <div class="search-mobile-content">
+            <button class="close-search" id="closeSearchMobile">
+                <i class="fa-solid fa-times"></i>
+            </button>
+            <input type="text" placeholder="Tìm kiếm tin tức..." />
+            <button class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+<div class="main-container">
+    <div class="page-header">
+        <h1>TIN MỚI</h1>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="main-content">
+            <div id="mainNewsList">
+                <a href="https://baotintuc.vn/nguoi-viet-4-phuong/cong-dong-nguoi-viet-nam-tai-campuchia-chung-tay-ung-ho-dong-bao-bi-bao-lu-20251009202949447.htm" class="news-item" target="_blank">
+                    <div class="news-image-wrapper">
+                        <img src="img/img_Tin mới/Cộng đồng người Việt.jpg" class="news-image" alt="Tin 1">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Cộng đồng người Việt Nam tại Campuchia chung tay ủng hộ đồng bào bị bão, lũ</div>
+                    </div>
+                </a>
+                
+                <a href="https://baotintuc.vn/xa-hoi/buu-dien-viet-nam-xay-dung-phuong-an-ho-tro-van-chuyen-hang-hoa-cuu-tro-vung-lu-20251009203822558.htm" class="news-item" target="_blank">
+                    <div class="news-image-wrapper">
+                        <img src="img/img_Tin mới/Bưu điện Việt Nam.jpg" class="news-image" alt="Tin 2">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Bưu điện Việt Nam hỗ trợ miễn phí vận chuyển hàng hóa cứu trợ vùng lũ</div>
+                    </div>
+                </a>
+                
+                <a href="https://baoxaydung.vn/mien-phi-duong-bo-cho-o-to-cho-hang-cuu-tro-tren-cao-toc-dien-chau-bai-vot-192251009195923443.htm" class="news-item" target="_blank">
+                    <div class="news-image-wrapper">
+                        <img src="img/img_Tin mới/Miễn phí đường bộ.jpg" class="news-image" alt="Tin 3">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Miễn phí đường bộ cho ô tô chở hàng cứu trợ trên cao tốc Diễn Châu - Bãi Vọt</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.qdnd.vn/nuoi-duong-van-hoa-bo-doi-cu-ho/lu-doan-phao-binh-382-quan-khu-1-giup-dan-khac-phuc-hau-qua-mua-lu-849963" class="news-item" target="_blank">
+                    <div class="news-image-wrapper">
+                        <img src="img/img_Tin mới/Lữ đoàn pháo binh.jpg" class="news-image" alt="Tin 4">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Lữ đoàn Pháo binh 382 (Quân khu 1) giúp dân khắc phục hậu quả mưa lũ</div>
+                    </div>
+                </a>
+                
+                <a href="https://tienphong.vn/to-pho-to-an-ninh-co-so-o-bac-ninh-qua-doi-khi-phong-chong-lut-bao-post1785673.tpo" class="news-item" target="_blank">
+                    <div class="news-image-wrapper">
+                        <img src="img/img_Tin mới/Tổ phó.jpg" class="news-image" alt="Tin 5">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-title">Tổ phó Tổ An ninh cơ sở ở Bắc Ninh qua đời khi phòng chống lụt bão</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="featured-section" id="featuredSection">
+                <a href="https://tieudung.giadinhonline.vn/cach-nau-ca-kho-nghe-chuan-vi-mien-trung-don-gian-lai-ngon-dung-dieu-d12076.html" class="featured-item" target="_blank">
+                    <img src="img/img_Tin mới/Cách nấu cá.jpg" class="featured-image" alt="Tin 6">
+                    <div class="featured-title">Cách nấu cá kho nghệ chuẩn vị miền Trung đơn giản lại ngon đúng điều</div>
+                </a>
+                
+                <a href="https://baolamdong.vn/meo-lam-com-chay-tu-xoi-thua-gion-tan-chuan-vi-mo-hanh-411589.html" class="featured-item" target="_blank">
+                    <img src="img/img_Tin mới/Mẹo làm cơm.jpg" class="featured-image" alt="Tin 7">
+                    <div class="featured-title">Mẹo làm cơm cháy từ xôi thừa giòn tan, chuẩn vị mơ hành</div>
+                </a>
+            </div>
+            
+            <div id="largeFeatured">
+                <a href="https://thethao247.vn/sea-games/191838-gianh-2-hcv-bong-da-viet-nam-thong-tri-tai-sea-games-33-d402370.html" class="related-item" target="_blank">
+                    <img src="img/img_Tin mới/Gianh 2 HCV.jpg" class="large-featured-image" alt="Tin 8">
+                    <div class="large-featured-title">Việt Nam giành 2 HCV, thống trị môn bóng đá tại SEA Games 33</div>
+                </a>
+            </div>
+
+            <div class="related-section">
+                <div class="related-header">🔄 Tin cũ hơn</div>
+                <div id="relatedNewsList">
+                    <a href="https://thoibaonganhang.vn/tri-gau-tu-nhien-4-phuong-phap-tai-nha-thuc-su-hieu-qua-175168.html" class="related-item" target="_blank">
+                        <img src="img/img_Tin mới/Trị gàu.jpg" class="related-image" alt="Tin 9">
+                        <div class="related-content">
+                            <div class="related-category">Sức khỏe</div>
+                            <div class="related-title">Trị nám tại nhà : 4 phương pháp tại nhà thực sự hiệu quả</div>
+                            <div class="related-time">1 giờ trước</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://baohatinh.vn/thoi-quen-buoi-sang-nen-duy-tri-thuong-xuyen-post301251.html" class="related-item">
+                        <img src="img/img_Tin mới/Thói quen.jpg" class="related-image" alt="Tin 10">
+                        <div class="related-content">
+                            <div class="related-category">Sức khỏe</div>
+                            <div class="related-title">Thói quen buổi sáng nên duy trì thường xuyên</div>
+                            <div class="related-time">2 giờ trước</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://baohatinh.vn/thoi-quen-buoi-sang-nen-duy-tri-thuong-xuyen-post301251.html" class="related-item">
+                        <img src="img/img_Tin mới/Hộ chiếu.jpg" class="related-image" alt="Tin 11">
+                        <div class="related-content">
+                            <div class="related-category">Du lịch</div>
+                            <div class="related-title">Hộ chiếu Việt Nam xếp thứ 90 thế giới, tăng 2 bậc</div>
+                            <div class="related-time">2 giờ trước</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://nhandan.vn/soi-noi-cuoc-thi-tim-hieu-ve-viet-nam-tai-lien-bang-nga-post930470.html" class="related-item">
+                        <img src="img/img_Tin mới/Cuộc thi.jpg" class="related-image" alt="Tin 12">
+                        <div class="related-content">
+                            <div class="related-category">Thế giới</div>
+                            <div class="related-title">Sôi nổi cuộc thi tìm hiểu về Việt Nam tại Liên bang Nga</div>
+                            <div class="related-time">3 giờ trước</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://plo.vn/100-diem-cho-u-22-viet-nam-va-chuc-vo-dich-sea-games-trong-tam-tay-post886804.html" class="related-item">
+                        <img src="img/img_Tin mới/100 điểm.jpg" class="related-image" alt="Tin 13">
+                        <div class="related-content">
+                            <div class="related-category">Thể thao</div>
+                            <div class="related-title">100 điểm cho U-22 Việt Nam và chức vô địch SEA Games trong tầm tay</div>
+                            <div class="related-time">5 giờ trước</div>
+                        </div>
+                    </a>
+                    
+                    <a href="https://nld.com.vn/thai-lan-xin-loi-viet-nam-vu-ep-vdv-dau-lai-mon-bowling-sea-games-33-196251216114649561.htm" class="related-item">
+                        <img src="img/img_Tin mới/Thái Lan.jpg" class="related-image" alt="Tin 14">
+                        <div class="related-content">
+                            <div class="related-category">Thể thao</div>
+                            <div class="related-title">Thái Lan xin lỗi Việt Nam vụ ép VĐV đấu lại môn bowling SEA Games 33</div>
+                            <div class="related-time">5 giờ trước</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button class="load-more-btn">XEM THÊM ></button>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="trending-section">
+                <div class="trending-header">Đang thịnh hành</div>
+                <ul class="trending-list" id="trendingList">
+                    <li>
+                        <span class="trending-number">1</span>
+                        <a href="https://www.saostar.vn/sao-sport/dia-chan-khi-thai-lan-trang-tay-hcv-bong-da-o-sea-games-202512192158105468.html" class="trending-text" target="_blank">
+                            Địa chấn khi Thái Lan trắng tay HCV bóng đá ở SEA Games
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">2</span>
+                        <a href="https://baolamdong.vn/thai-lan-trang-tay-bong-da-sea-games-33-cu-soc-va-su-phan-no-411909.html" class="trending-text" target="_blank">
+                            Thái Lan trắng tay bóng đá SEA Games 33: Cú sốc và sự phẫn nộ
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">3</span>
+                        <a href="https://www.qdnd.vn/the-thao/sea-games-33/thuan-da-thang-tien-1017834" class="trending-text" target="_blank">
+                            Thuận đà thẳng tiến
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">4</span>
+                        <a href="https://baolamdong.vn/hoa-hau-tieu-vy-gay-sot-voi-nhan-sac-ty-le-vang-khi-bat-trend-tram-ty-411889.html" class="trending-text" target="_blank">
+                            Hoa hậu Tiểu Vy gây sốt với nhan sắc tỷ lệ vàng khi bắt trend trăm tỷ
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">5</span>
+                        <a href="https://www.saostar.vn/dien-anh/yoo-ah-in-bi-chi-trich-vi-nghi-van-tai-xuat-sau-scandal-202512200619117874.html" class="trending-text" target="_blank">
+                            Yoo Ah In bị chỉ trích vì nghi vấn tái xuất sau scandal
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">6</span>
+                        <a href="https://huengaynay.vn/chinh-tri-xa-hoi/tiep-noi-truyen-thong-phat-huy-suc-manh-khoi-dai-doan-ket-toan-dan-161127.html" class="trending-text" target="_blank">
+                            Tiếp nối truyền thống, phát huy sức mạnh khối đại đoàn kết toàn dân
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">7</span>
+                        <a href="https://baotintuc.vn/thoi-su/khang-dinh-vai-tro-quan-trong-trong-tham-gia-phong-chong-khac-phuc-hau-qua-thien-tai-20251219204932040.htm" class="trending-text" target="_blank">
+                            Khẳng định vai trò quan trọng trong tham gia phòng, chống, khắc phục hậu quả thiên tai
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">8</span>
+                        <a href="https://vov.vn/xa-hoi/thoi-tiet-hom-nay-2012-bac-bo-ret-ve-dem-va-sang-nam-bo-nang-nong-ban-ngay-post1255170.vov" class="trending-text" target="_blank">
+                            Thời tiết hôm nay 20/12: Bắc Bộ rét về đêm và sáng, Nam Bộ nắng nóng ban ngày
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">9</span>
+                        <a href="https://plo.vn/du-bao-thoi-tiet-ngay-20-12-bac-bo-sang-som-co-suong-mu-nam-bo-ngay-nang-post887511.html" class="trending-text" target="_blank">
+                            Dự báo thời tiết ngày 20-12: Bắc Bộ sáng sớm có sương mù, Nam Bộ ngày nắng
+                        </a>
+                    </li>
+                    <li>
+                        <span class="trending-number">10</span>
+                        <a href="https://www.saostar.vn/dien-anh/avatar-3-su-xuat-hien-cua-nhung-guong-mat-hoan-toan-moi-202512200620126483.html" class="trending-text" target="_blank">
+                            Avatar 3: Sự xuất hiện của những gương mặt hoàn toàn mới
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ==========  ĐUÔI TRANG  ========== -->
+    <footer class="footer">
+        <!-- FOOTER TOP -->
+        <div class="footer-top">
+            <div class="container footer-top-inner">
+                <div class="logo2">
+                    <div class="logo-frame2">
+                        <span class="logo-text2">News1s</span>
+                    </div>
+                    <span class="slogan2">Cập nhật trong 1s</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+
+                <!--===== BẢNG1 =====-->
+                <div class="footer-col">
+                    <ul>
+                        <li>
+                            <span class="tieude1">Hotline</span> <br>
+                            <span class="sdt">0987 654 321</span>
+                        </li>
+                        <li>
+                            <span class="tieude1">Liên hệ quảng cáo</span><br>
+                            <span class="sdt">0123 456 789</span>
+                        </li>
+                    </ul>
+                    <div class="mxh">
+                        <div class="fb">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="ytb">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===== BẢNG2 =====-->
+                <div class="footer-col">
+                    <ul>
+                        <li class="tieude2">Tổng biên tập</li>
+                        <li class="thanhvien">Trần Đại Hiệp</li>
+
+                        <li class="tieude2">Phó tổng biên tập</li>
+                        <li class="thanhvien">Nguyễn Quý Đạt</li>
+                        <li class="thanhvien">Lê Hữu Chung</li>
+                        <li class="thanhvien">Nguyễn Tiến Chung</li>
+
+                        <li class="tieude2">Tổng thư ký</li>
+                        <li class="thanhvien">Bùi Đình Hà</li>
+                    </ul>
+                </div>
+
+                <!--===== BẢNG3 =====-->
+                <div class="footer-col">
+                    <span class="tieude3">Đơn vị thiết lập: </span>
+                    <span>Công ty cổ phần công nghệ EPI – Chịu trách nhiệm quản lý nội dung: Vũ Trọng Cường</span><br>
+                    <span class="tieude3">Địa chỉ:</span>
+                    <span> Tầng 16, Tòa nhà ROX Tower, số 54A Nguyễn Chí Thanh, Phường Láng, Thành phố Hà Nội</span>
+                    <p>Giấy phép thiết lập trang thông tin điện tử tổng hợp số 1818/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 05/05/2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE NAV BAR ===== -->
+    <div class="mobile-nav">
+      <a href="http://127.0.0.1:5500/index.html" class="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Trang chủ</span>
+      </a>
+
+      <a href="http://127.0.0.1:5500/tinmoi.html">
+        <i class="fa-solid fa-clock"></i>
+        <span>Tin mới</span>
+      </a>
+
+      <a href="http://127.0.0.1:5500/video.html">
+        <i class="fa-solid fa-video"></i>
+        <span>Video</span>
+      </a>
+
+      <a href="#" id="mobileNotifyIcon">
+        <i class="fa-solid fa-bell"></i>
+        <span>Thông báo</span>
+      </a>
+
+      <a href="#" id="mobileUserIcon">
+        <i class="fa-solid fa-user"></i>
+        <span>Tôi</span>
+      </a>
+    </div>
+
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Notification Panel -->
+    <div class="notify-panel" id="notifyPanel">
+        <div class="notify-header">
+            <h3>Thông báo</h3>
+            <button class="close-notify" id="closeNotify">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="notify-content">
+            <p>Chưa có thông báo mới</p>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <button class="close-login" id="closeLogin">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        
+        <h2>Đăng nhập</h2>
+
+        <input type="text" placeholder="Tên đăng nhập">
+        <input type="password" placeholder="Mật khẩu">
+
+        <span class="forgot">Quên mật khẩu?</span>
+
+        <div class="divider"></div>
+
+        <p class="signup">
+            Chưa có tài khoản? <span>Đăng ký</span>
+        </p>
+
+        <button class="social google">
+            <i class="fa-brands fa-google"></i> Tiếp tục với Google
+        </button>
+
+        <button class="social facebook">
+            <i class="fa-brands fa-facebook"></i> Tiếp tục với Facebook
+        </button>
+    </div>
+
+    <!-- Hashtag Panel -->
+    <div class="hashtag-panel" id="hashtagPanel">
+        <button class="close-hashtag" id="closeHashtag">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        
+        <div class="hashtag-grid">
+            <div class="hashtag-col">
+                <h4><span>|</span> BÓNG ĐÁ</h4>
+                <p>#NgoạiHạngAnh #LaLiga #SerieA</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> GIẢI TRÍ</h4>
+                <p>#Phim #Nhạc #Sao</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> CÔNG NGHỆ</h4>
+                <p>#AI #Smartphone #Gaming</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> KINH TẾ</h4>
+                <p>#Chứngkhoán #Bất động sản #Khởi nghiệp</p>
+            </div>
+            
+            <div class="hashtag-col">
+                <h4><span>|</span> ĐỜI SỐNG</h4>
+                <p>#Sức khỏe #Du lịch #Ẩm thực</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+
+</body>
+</html>
